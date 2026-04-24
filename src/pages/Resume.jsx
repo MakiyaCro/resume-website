@@ -42,6 +42,12 @@ const experience = [
 
 const certifications = [
   {
+    name: 'CompTIA Network+ (N10-009)',
+    issuer: 'CompTIA',
+    date: '2026',
+    link: null,
+  },
+  {
     name: 'CompTIA Security+ (SY0-701)',
     issuer: 'CompTIA',
     date: '2025',

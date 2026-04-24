@@ -199,7 +199,7 @@ main {
 /* ── Credentials bar ── */
 .credentials-bar {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 1px;
   margin: 2.5rem 0 0;
   border: 1px solid var(--border-bright);
@@ -597,7 +597,7 @@ main {
   .hero-bio { max-width: 100%; }
 
   .credentials-bar {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   .about-grid {

@@ -64,6 +64,13 @@ export default function Home() {
         <div className="credential-item">
           <span className="cred-icon">▣</span>
           <div>
+            <p className="cred-title">CompTIA Network+</p>
+            <p className="cred-sub">N10-009 Certified<br />2026</p>
+          </div>
+        </div>
+        <div className="credential-item">
+          <span className="cred-icon">▣</span>
+          <div>
             <p className="cred-title">FAA Part 107</p>
             <p className="cred-sub">Remote Pilot Certification<br />2023</p>
           </div>
