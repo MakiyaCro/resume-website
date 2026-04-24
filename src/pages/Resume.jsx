@@ -1,31 +1,41 @@
+const summary = `CompTIA Security+ and Network+ certified analyst with hands-on experience in threat detection and incident response through a home lab running ELK Stack SIEM and OpenEDR. Built a suite of AI-powered security tools including a static vulnerability scanner, phishing detector, and hardened API backend. Actively progressing through TryHackMe SOC Level 1 path. Seeking SOC Analyst role to apply threat hunting, log analysis, and security automation skills.`
+
+const skills = [
+  {
+    label: 'Systems & Networking',
+    items: 'Windows 10/11, Linux, Event Viewer, Reliability Monitor, IPv4 Networks, Internet Diagnostics, PC Troubleshooting, System Imaging',
+  },
+  {
+    label: 'Security Tools',
+    items: 'Wireshark, Nmap, tcpdump, OpenEDR, ELK SIEM, Ghidra, PEStudio, hashcat, TryHackMe',
+  },
+  {
+    label: 'Cloud & DevOps',
+    items: 'AWS (S3, CloudFront, Route 53), Git, FastAPI, LangGraph, Postman',
+  },
+  {
+    label: 'Programming',
+    items: 'Python, JavaScript, HTML, CSS, SQL, C++, Java, React, Django',
+  },
+]
+
 const experience = [
   {
-    title: 'Founder / Drone Pilot & Software Developer',
+    title: 'Founder & Software Developer',
     company: 'Makcro Drone Works LLC — Starkville, MS',
     date: 'Jul 2022 — Dec 2025',
     bullets: [
-      'Delivered professional aerial mapping and inspection services for real estate, construction, and agricultural clients using DJI systems and DroneDeploy; processed GPS metadata into actionable deliverables.',
-      'Designed and developed custom assessment tools and data visualization applications for clients using Python, Django, and React.',
-      'Managed all aspects of operations: client acquisition, FAA Part 107 compliance, project coordination, safety protocols, and technical documentation.',
+      'Designed custom assessment tools and data visualization applications using Python, Django, and React, transforming raw client data into actionable business intelligence.',
+      'Hardened WordPress infrastructure against SQL injection attacks using Cloudflare WAF and WPForms configurations; managed FAA Part 107 compliance, client acquisition, and technical documentation for aerial mapping and inspection services.',
     ],
   },
   {
-    title: 'Web Developer & Social Media Manager',
+    title: 'Web Developer & Digital Operations',
     company: '777 Bison Ranch — Rapid City, SD (Remote)',
     date: 'Jan 2022 — Sept 2024',
     bullets: [
-      'Built and maintained a secure WordPress/WooCommerce e-commerce platform handling sensitive payment data; launched merchandise sales generating ~$11K in revenue in the first year.',
-      'Drove 650% follower growth on Facebook (20K → 150K), scaled TikTok from zero to 65K followers, and produced multiple videos surpassing one million views each.',
-      'Grew Instagram from 1K to 3K followers and established a YouTube channel reaching 1K subscribers; generated $3.2K in Facebook ad revenue.',
-    ],
-  },
-  {
-    title: 'Call Center Internet Technician',
-    company: 'Golden West Technology — Rapid City, SD',
-    date: 'Jul 2019 — Oct 2019',
-    bullets: [
-      'Diagnosed and resolved connectivity issues across DSL, cable, fiber, and wireless technologies via remote diagnostics.',
-      'Communicated technical solutions clearly to non-technical customers; created detailed repair tickets for field technicians.',
+      'Built and maintained WordPress/WooCommerce platform handling sensitive customer payment data, generating approximately $11K in first-year revenue.',
+      'Scaled brand presence to 150K Facebook followers and 65K TikTok followers through strategic content creation.',
     ],
   },
   {
@@ -33,9 +43,8 @@ const experience = [
     company: 'Doosan Bobcat — Bismarck, ND',
     date: 'Jun 2018 — Dec 2018',
     bullets: [
-      'Diagnosed and maintained enterprise hardware including terminals, laptops, desktops, printers, and televisions.',
-      'Performed system diagnostics using Windows Event Viewer and Reliability Monitor to troubleshoot crashes and hardware failures.',
-      'Deployed standardized computer images via IPv4 networks for efficient hardware replacement and configuration management.',
+      'Diagnosed and maintained work terminals, laptops, desktops, and printers across enterprise environment; performed system diagnostics using Windows reliability tools and Event Viewer to troubleshoot crashes, performance issues, and hardware failures.',
+      'Deployed standardized computer images via IPv4 networks, enabling efficient hardware replacement and configuration management across the organization.',
     ],
   },
 ]
@@ -67,35 +76,36 @@ const certifications = [
   },
 ]
 
-const skills = [
-  { label: 'Languages', items: 'Python, JavaScript, HTML/CSS, C++, SQL, Java, PHP, R' },
-  { label: 'Frameworks & Tools', items: 'React, Django, Redux, FastAPI, Git, WordPress, WooCommerce, Postman, Heroku' },
-  { label: 'Security', items: 'Wireshark, Nmap, OpenEDR, ELK SIEM, TryHackMe' },
-  { label: 'OS & Networking', items: 'Windows 10/11, Linux, Event Viewer, IPv4 Networks, System Imaging' },
-]
-
 export default function Resume() {
   return (
     <div className="page">
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '0.75rem', marginBottom: '2rem' }}>
+
+      {/* ── Header ── */}
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.75rem', marginBottom: '2rem' }}>
         <div>
           <p className="section-label">// RESUME</p>
-          <h2 style={{ color: '#fff' }}>Makiya Crochiere</h2>
-          <p style={{ fontSize: '0.8rem', color: 'var(--text-dim)', marginTop: '0.25rem' }}>
-            crochieremakiya@gmail.com &nbsp;·&nbsp; 970-846-1536 &nbsp;·&nbsp;
-            <a href="https://github.com/MakiyaCro" target="_blank" rel="noreferrer">github.com/MakiyaCro</a> &nbsp;·&nbsp;
-            <a href="https://makcrodroneworks.com" target="_blank" rel="noreferrer">makcrodroneworks.com</a>
+          <h2 style={{ color: '#fff', marginBottom: '0.4rem' }}>Makiya Crochiere</h2>
+          <p style={{ fontSize: '0.78rem', color: 'var(--text-dim)', lineHeight: '1.8' }}>
+            crochieremakiya@gmail.com &nbsp;·&nbsp; 970-846-1536<br />
+            <a href="https://github.com/MakiyaCro" target="_blank" rel="noreferrer">github.com/MakiyaCro</a>
+            &nbsp;·&nbsp;
+            <a href="https://linkedin.com/in/makiya-crochiere" target="_blank" rel="noreferrer">linkedin.com/in/makiya-crochiere</a>
+            &nbsp;·&nbsp;
+            <a href="https://makiyacrochiere.com" target="_blank" rel="noreferrer">makiyacrochiere.com</a>
           </p>
         </div>
-        <a
-          className="btn btn-outline"
-          href="/resume.pdf"
-          target="_blank"
-          rel="noreferrer"
-        >
+        <a className="btn btn-outline" href="/resume.pdf" target="_blank" rel="noreferrer">
           ↓ Download PDF
         </a>
       </div>
+
+      {/* ── Summary ── */}
+      <section className="resume-section">
+        <h2>Professional Summary</h2>
+        <p style={{ fontSize: '0.84rem', color: 'var(--text-dim)', lineHeight: '1.85', padding: '1rem 1.25rem', background: 'var(--bg-card)', borderLeft: '2px solid var(--green-dim)' }}>
+          {summary}
+        </p>
+      </section>
 
       {/* ── Skills ── */}
       <section className="resume-section">
@@ -104,7 +114,7 @@ export default function Resume() {
           {skills.map((s) => (
             <div className="cert-card" key={s.label}>
               <h3>{s.label}</h3>
-              <p className="cert-issuer" style={{ color: 'var(--text-dim)', fontSize: '0.8rem', lineHeight: '1.6' }}>{s.items}</p>
+              <p style={{ color: 'var(--text-dim)', fontSize: '0.79rem', lineHeight: '1.7' }}>{s.items}</p>
             </div>
           ))}
         </div>
@@ -138,13 +148,9 @@ export default function Resume() {
           {certifications.map((cert) => (
             <div className="cert-card" key={cert.name}>
               <h3>
-                {cert.link ? (
-                  <a href={cert.link} target="_blank" rel="noreferrer">
-                    {cert.name}
-                  </a>
-                ) : (
-                  cert.name
-                )}
+                {cert.link
+                  ? <a href={cert.link} target="_blank" rel="noreferrer">{cert.name}</a>
+                  : cert.name}
               </h3>
               <p className="cert-issuer">{cert.issuer}</p>
               <p className="cert-date">{cert.date}</p>
@@ -152,6 +158,7 @@ export default function Resume() {
           ))}
         </div>
       </section>
+
     </div>
   )
 }

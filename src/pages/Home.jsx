@@ -9,29 +9,19 @@ export default function Home() {
             <h1>
               Makiya Crochiere<span className="cursor" />
             </h1>
-            <p className="hero-title">&gt; Software Developer &amp; Security-Focused Engineer</p>
+            <p className="hero-title">&gt; Security Analyst &amp; Software Developer</p>
             <p className="hero-bio">
-              CS graduate, drone company founder, and builder of AI-powered tools.
-              I work across the stack — from FastAPI backends and Django apps to
-              Chrome extensions and local LLM integrations. Currently seeking new
-              opportunities in software development, security, or IT.
+              CompTIA Security+ and Network+ certified analyst with hands-on threat detection
+              experience via ELK Stack SIEM and OpenEDR. Builder of AI-powered security tools
+              and actively progressing through TryHackMe SOC Level 1. Seeking a SOC Analyst
+              role to apply threat hunting, log analysis, and security automation skills.
             </p>
             <div className="hero-links">
-              <a
-                className="btn"
-                href="https://github.com/MakiyaCro"
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a className="btn" href="https://github.com/MakiyaCro" target="_blank" rel="noreferrer">
                 GitHub
               </a>
-              <a
-                className="btn"
-                href="https://makcrodroneworks.com"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Drone Co.
+              <a className="btn" href="https://linkedin.com/in/makiya-crochiere" target="_blank" rel="noreferrer">
+                LinkedIn
               </a>
               <a className="btn btn-outline" href="mailto:crochieremakiya@gmail.com">
                 Email Me
@@ -86,19 +76,20 @@ export default function Home() {
           <div className="about-card">
             <h3>Background</h3>
             <p>
-              Founded and operated Makcro Drone Works LLC, delivering aerial mapping
-              services and custom software to clients across agriculture, real estate,
-              and construction. Passionate about security tooling, AI agents, and automation.
+              CS graduate and founder of Makcro Drone Works LLC. Built AI-powered security
+              tools, deployed ELK Stack SIEM and OpenEDR in a home lab, and earned CompTIA
+              Security+ and Network+ certifications. Currently pursuing SOC analyst roles
+              with a focus on threat detection and security automation.
             </p>
           </div>
           <div className="about-card">
             <h3>Core Skills</h3>
             <ul>
-              <li>Python, JavaScript, HTML/CSS, SQL, PHP</li>
-              <li>React, Django, Redux, FastAPI</li>
-              <li>AI Agents &amp; Local LLMs (Ollama)</li>
-              <li>Security: Wireshark, Nmap, ELK SIEM, OpenEDR</li>
-              <li>WordPress, WooCommerce, Git, Heroku</li>
+              <li>Security: ELK SIEM, OpenEDR, Wireshark, Nmap</li>
+              <li>Python, JavaScript, React, Django, FastAPI</li>
+              <li>AI Agents &amp; Local LLMs (Ollama, LangGraph)</li>
+              <li>AWS: S3, CloudFront, Route 53</li>
+              <li>TryHackMe SOC Level 1 (in progress)</li>
             </ul>
           </div>
         </div>
